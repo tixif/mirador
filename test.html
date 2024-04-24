@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Test Mirador</title>
+  </head>
+  <body>
+    <div id="mirador"></div>
+    <script src="main.js"></script>
+    <script>
+      const manifestUrl = 'https://nubis.univ-paris1.fr/iiif/3/nqgr/manifest';
+      const canvasId = 'https://nubis.univ-paris1.fr/iiif/3/nqgr/canvas/p5';
+      const url = getCanvasLink(manifestUrl, canvasId, 0);
+      window.open(url, '_blank');
+    </script>
+  </body>
+</html>
+
